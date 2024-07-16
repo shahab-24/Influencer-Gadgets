@@ -10,6 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+
 /* shared styles */
 .container {
   max-width: 1100px;
@@ -76,6 +78,26 @@ text-align: left;
   justify-content: space-around;
   align-items: center;
 }
+
+.card_container{
+  justify-content: center;
+  align-items: center;
+}
+
+.interaldisplay_flex{
+  flex-direction: column;
+}
+
+.card_container p{
+  color: rgb(120, 120, 133);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 143%;
+letter-spacing: 1.8%;
+text-align: left;
+}
+
 
 @media screen and (max-width:576px){
   .nav_option{
