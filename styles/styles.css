@@ -72,6 +72,11 @@ text-align: left;
   align-items: center;
 }
 
+.logos_container{
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media screen and (max-width:576px){
   .nav_option{
     display: none;
