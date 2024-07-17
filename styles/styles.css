@@ -17,7 +17,6 @@ body {
   margin: 50px auto;
 }
 
-
 .btn_primary {
   border-radius: 20px;
   color: white;
@@ -61,7 +60,7 @@ h3 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 70px;
-  letter-spacing: 0px;
+
   text-align: left;
 }
 
@@ -74,19 +73,21 @@ h3 {
 }
 
 .logos_container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   justify-content: space-around;
   align-items: center;
 }
 
-.card_container{
+.card_container {
   justify-content: center;
   align-items: center;
-  
-padding: 30px;
 
-margin: 10px auto;
-gap: 20px;
-width: 100%;
+  padding: 30px;
+
+  margin: 10px auto;
+  gap: 20px;
+  width: 100%;
 }
 /* .single_card{
   padding: 20px;
@@ -100,15 +101,14 @@ width: 100%;
   flex-direction: column;
   line-height: 60px;
   border-radius: 5px;
- /* border: 1px solid red; */
+  /* border: 1px solid red; */
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   background: rgb(255, 255, 255);
   width: 100%;
-padding: 20px;
- /* width: 320px;
+  padding: 20px;
+  /* width: 320px;
  height: 450px; */
 }
-
 
 .card_container p {
   color: rgb(120, 120, 133);
@@ -118,44 +118,123 @@ padding: 20px;
   line-height: 143%;
   letter-spacing: 1.8%;
   text-align: left;
-  
-  
 }
-.features{
+.features {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.features_text{
+.features_text {
   text-align: left;
 }
 
-.join_btn{
+.join_btn {
   border-radius: 5px;
   border: none;
 
-Font-weight: 700;
-Font-size: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-.footer{
+.footer {
   color: white;
   text-align: center;
   height: 200px;
   padding-top: 50px;
 
-  
-background: rgb(10, 31, 51);
+  background: rgb(10, 31, 51);
+}
+.hidden {
+  display: none;
 }
 
-
 @media screen and (max-width: 576px) {
+  .navbar {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .btn_primary {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+  }
+
   .nav_option {
     display: none;
   }
   #hamburger {
+    font-size: 2rem;
     display: block;
+  }
+  .banner_container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .banner_container img {
+    width: 80%;
+  }
+  .banner_content {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+  .banner_content p {
+    font-size: 2rem;
+  }
+
+  .banner_content,
+  .banner_content h3 {
+    text-align: center;
+  }
+  #title {
+    font-size: 2rem;
+  }
+
+  .logos_container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding-left: 50px;
+  }
+  .popular{
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  .card_container {
+    flex-direction: column;
+  }
+  .card_container h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .features {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .features_text,
+  .features_text h4 {
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .features_text p {
+    text-align: center;
+  }
+  .footer {
+    margin: 20px auto;
+  }
+  .background_img {
+    width: 100%r;
+  }
+  .join_btn{
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
