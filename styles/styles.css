@@ -83,9 +83,7 @@ h3{
 .card_container {
   justify-content: center;
   align-items: center;
-
   padding: 30px;
-
   margin: 10px auto;
   gap: 20px;
   width: 100%;
@@ -98,11 +96,10 @@ h3{
   flex-direction: column;
   line-height: 60px;
   border-radius: 5px;
-
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   background: rgb(255, 255, 255);
   width: 100%;
-  padding: 20px;
+  padding: 20px;}
 
 
 .card_container p {
@@ -110,14 +107,15 @@ h3{
   font-family: Inter;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 143%;
-  letter-spacing: 1.8%;
+ 
+ 
   text-align: left;
 }
 .features {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
   gap: 30px;
 }
 
@@ -128,7 +126,6 @@ h3{
 .join_btn {
   border-radius: 5px;
   border: none;
-
   font-weight: 700;
   font-size: 1rem;
 }
@@ -145,10 +142,12 @@ h3{
   display: none;
 }
 
-@media screen and (max-width: 576px) {
 
+
+
+
+@media screen and (max-width: 576px) {
   .navbar{
-  
     justify-content: space-between;
     align-items: center;
     width: 90%;
@@ -168,19 +167,14 @@ h3{
   .nav_option {
     display: none;
   }
-  .hamburger {
-    /* display: flex; */
-    
+
+  .hamburger { 
     font-size: 1.5rem;
     display: block;
-    /* text-align: center;
-    justify-content: center;
-    align-items: center; */
-    /* margin: 0 auto; */
-   
   }
+
+
   #title {
-  
     font-size: 1.5rem;
   }
 
