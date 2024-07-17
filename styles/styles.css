@@ -51,10 +51,11 @@ h4 {
   font-weight: 600;
 }
 
-.hamburger, #bar_icon {
+.hamburger{
   display: none;
 }
-h3 {
+
+h3{
   color: rgb(58, 58, 58);
 
   font-size: 3rem;
@@ -89,26 +90,20 @@ h3 {
   gap: 20px;
   width: 100%;
 }
-/* .single_card{
-  padding: 20px;
-} */
+
 
 .interaldisplay_flex {
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+
   display: flex;
   flex-direction: column;
   line-height: 60px;
   border-radius: 5px;
-  /* border: 1px solid red; */
+
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   background: rgb(255, 255, 255);
   width: 100%;
   padding: 20px;
-  /* width: 320px;
- height: 450px; */
-}
+
 
 .card_container p {
   color: rgb(120, 120, 133);
@@ -152,15 +147,11 @@ h3 {
 
 @media screen and (max-width: 576px) {
 
-  .navbar {
+  .navbar{
   
     justify-content: space-between;
     align-items: center;
     width: 90%;
-   
-    border: 1px solid red;
-   
-    
     padding: 10px 20px;
     margin: 0 auto;
   }
@@ -193,20 +184,23 @@ h3 {
     font-size: 1.5rem;
   }
 
-  .banner_container {
+  .banner_container{
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
   }
-  .banner_container img {
+
+  .banner_container img{
     width: 80%;
   }
-  .banner_content {
+
+  .banner_content{
     margin-top: 50px;
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  .banner_content p {
+
+  .banner_content p{
     font-size: 2rem;
   }
 
